@@ -22,14 +22,17 @@ namespace ConsoleApp1
         public float INCh
         {
             get { return Centimeter*ONE_INCE; }
-            private set { Centimeter = (int)(value/ONE_INCE); }
+      
+            //{2023.07.03. Add private setInch function . Gamma
+            private set { this._setInch(value); }
         }
 
         public void Run()
         {
             Console.WriteLine($"{this.Centimeter}cm 는 {this.INCh}입니다");
         }
-   }
+
+    }
 
 
 }
