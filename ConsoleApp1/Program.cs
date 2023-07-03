@@ -31,7 +31,10 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"{this.Centimeter}cm 는 {this.INCh}입니다");
         }
-
+        private void _setInch(float inchValue)
+        {
+            Centimeter = (int)(inchValue/ONE_INCE);
+        }
     }
 
 
