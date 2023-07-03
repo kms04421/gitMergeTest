@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -14,4 +14,22 @@ namespace ConsoleApp1
             Console.WriteLine("Hello World");
         }
     }
+
+    public class Ruar
+    {
+        private const float ONE_INCE = 2.54F;
+        public int Centimeter { get; set; } = 0;
+        public float INCh
+        {
+            get { return Centimeter*ONE_INCE; }
+            private set { Centimeter = (int)(value/ONE_INCE); }
+        }
+
+        public void Run()
+        {
+            Console.WriteLine($"{this.Centimeter}cm 는 {this.INCh}입니다");
+        }
+   }
+
+
 }
