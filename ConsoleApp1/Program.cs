@@ -8,11 +8,14 @@ namespace ConsoleApp1
 {
     public class Program
     {
+        // { 2023.07.03. Add usetr input / Beat
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Hell     o Wor ld Wor ldWor ld");
+            Console.WriteLine("Hell     o Wor ld");
             Console.WriteLine("Hello World");
         }
+        // { 2023.07.03. Add usetr input / Beat
     }
 
     public class Ruar
